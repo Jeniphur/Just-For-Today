@@ -50,13 +50,15 @@ body {
 }
 
 .cloudBig{
-    padding-top: 60px;
-    width: 25%;
+    padding-top: 100px;
     z-index: -1;
+    margin-left:0;
+    margin-right: auto;
+    display:block;
 }
 
 .cloudSmall{
-    padding-top: 200px;
+    padding-top: 350px;
     z-index: -1;
     margin-right:0;
     margin-left: auto;
@@ -145,6 +147,13 @@ p {
     text-align: center;
     margin-left: 5%;
     margin-right: 5%
+}
+
+.active:hover{
+    color: white !important;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-decoration: underline;
 }
 
 /*return to top button*/
