@@ -7,24 +7,80 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   <!--CSS Link-->
   <link href="css/style.css" rel="stylesheet" type="text/css">
+  <!--Javascript Link-->
+
+  <!--FONT AWESOME Link-->
+  <script src="https://kit.fontawesome.com/dcd5ed23df.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-<header>
+<header id="top">
   <!--Nav Here-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#top">
+      <img src="/images/Logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      <h2>Just For Today</h2>
+    </a>  
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" href="#welcome">About<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#comingSoon">Coming Soon</a>
+        <a class="nav-link" href="#faq">FAQ</a>
+      </div>
+    </div>
+  </nav>
 </header>
 
 <section id="welcome">
   <!--Megan Here-->
 </section>    
 
+
+<!--Jodi's Section -- Coming Soon -->
 <section id="comingSoon">
-  <!--Jodi Here-->
+  <!--Sticky Return to Top Button-->
+  <!--This isn't working on my end - but once the Javascript is up and running it should work ezpz :)-->
+  <button onclick="topFunction()" id="rtnTop" title="Return to top">
+    <i class="fas fa-caret-up fa-5x"></i>
+  </button>
+  <!--Page Heading -->
+  <h2>Coming Soon</h2>
+  <br>
+  <!--Card Group-->
+  <div class="card-group">
+    <div class="card">
+      <i class="far fa-lightbulb fa-7x card-img-top"></i>
+      <div class="card-body">
+        <h5 class="card-title">Daily Wellness Tips</h5>
+        <p class="card-text">In the future your lil' buddy will have tips to share! Tap the lightbulb over his head to see what he has to say. He will offer you one tip for each area of wellness. We respect your digital wellness goals, so we will only offer five tips a day, because reading about something just isn't the same as practicing it.</p>
+      </div>
+    </div>
+    <div class="card">
+      <i class="fas fa-star fa-7x card-img-top"></i>
+      <div class="card-body">
+        <h5 class="card-title">Sparkling Stars</h5>
+        <p class="card-text">We see you coming back each day! We see you doing your all to better yourself. Coming soon, you will receive a fun animation letting you know you've earned a star. No more having to review your stats page to see your reward. We will show you right away after checking your goal off your list.</p>
+      </div>
+    </div>
+    <div class="card">
+      <i class="fas fa-coins fa-7x card-img-top"></i>
+      <div class="card-body">
+        <h5 class="card-title">One-Time Donation</h5>
+        <p class="card-text">We are here to help you on your path to wellness. That's why we offer our app completely free or with donation based subscriptions, but YOU our kind, amazing users have shared that you would like to make a one time donation. This option will be an added feature in the Market soon. You certainly don't have to give, but if you do, know we appreciate it greatly.</p>
+      </div>
+    </div>
+  </div>
+  <!--BuddyImg-->
+  <img src="./images/lil-dude-lemon.svg" class="buddy">
 </section>
 
 <section id="faq">
   <!--Jenni Here-->
 </section>
+
 
 <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 <script src="index.js"></script>
