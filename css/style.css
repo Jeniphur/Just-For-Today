@@ -27,6 +27,7 @@ body {
     height: auto;
     background-color: #FFDEAC; /* For browsers that do not support gradients */
     background-image: linear-gradient(#FFDEAC, #F4FEAC, #9DE9E4, #BCB1EF,#A35AFF);
+    z-index: 0;
 }
 
 .whiteBox{
@@ -35,6 +36,10 @@ body {
     padding: 15px;
     margin-left: 5%;
     margin-right: 5%
+}
+.fixed-bottom{
+    width: 100%;
+    z-index: -1;
 }
 
 /*Welcome Section*/
