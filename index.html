@@ -17,7 +17,7 @@
 <body>
 <header id="top">
   <!--Nav Here-->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <img src="images/Logo.png" width="45" height="45" alt="Logo">
     <a class="navbar-brand" href="#top">
       <h1>Just For Today</h1>
@@ -33,6 +33,7 @@
       </div>
     </div>
   </nav>
+  <img class="fixed-bottom" src="./images/Hills.svg">
 </header>
 
 <!--Megan's Section -- Welcome -->
@@ -45,7 +46,12 @@
   <!--Card Group-->
   <div class="card whiteBox">
     <div class="card-body">
-      <h2>Our purpose is to help you take the steps you need to make your personal self-care a pary of your daily life. Many of us out there tend to put ourselves last and focus on others first. We focus on teaching you activities you can do to be healthy in all areas of your life, physical, mental, emotional, social, and spirtual.</h2>
+      <p>Our purpose is to help you take the steps you need to make your personal self-care a part of your daily life. </p>
+      <p>Many of us tend to put ourselves last and focus on others, but you can’t forget to give yourself the love and care you give others! With this in mind “Just for Today” gives you a li’l buddy to support your self-care journey. Every small step you make is celebrated, and our app gives you activities you can do to be healthy in all areas of your life, physical, mental, emotional, social, and spirtual. </p>
+      <p>As you cross-off your goals you can spoil your new friend with accessories and gifts. Caring for them as you care for yourself and soon enough self-care will be present in your life without even realizing it!</p>
+    </div>
+    <div class = "card-body">
+      <h2>So jump right in and download our app to meet the li’l buddy who is going to help you take care of yourself each day and every step of the way!</h2>
     </div>
   </div>
   <!--BuddyImg-->
@@ -54,6 +60,30 @@
 
 <!--Jodi's Section -- Coming Soon -->
 <section id="comingSoon">
+  <!--Stickly Button Here-->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Return to Top</button>
+    <!--Stickly Button Script Here-->
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
   <!--Page Heading -->
   <h1>Coming Soon</h1>
   <br>
