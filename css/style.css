@@ -5,11 +5,15 @@
 
 .navbar{
     width: 100%;
-    -webkit-box-shadow: 2px 2px 2px 2px black;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-shadow: 2px 2px 2px 2px black;
     border-radius: 0px 0px 0px 10px;
 }
 
-
+.navbar-nav{
+    background-color: plum;
+}
 
 /*Background*/
 body {
@@ -21,10 +25,32 @@ body {
 .whiteBox{
     background: rgba(255, 255, 255, 0.8); /* White background with 80% opacity */
     border-radius: 10px;
+    padding: 15px;
+    margin-left: 5%;
+    margin-right: 5%
+}
+
+/*Welcome Section*/
+#welcome{
+    margin-top: 30px;
+}
+
+/*Coming Soon Section*/
+#comingSoon{
+    margin-top: 30px;
+}
+
+/*FAQ Section*/
+#faq{
+    margin-top: 30px;
+}
+
+.accordion{
+    border: none !important;
 }
 
 /*Typography*/
-@font-face {
+@font-face { /*This links the aquatico font from our files*/
     src: url("../fonts/Aquatico-Regular.otf");
     font-family: aquatico;
 }
@@ -32,6 +58,7 @@ body {
 h1 {
     font-family: aquatico;
     font-size: 36px;
+    text-align: center;
     color: white;
     text-shadow: 2px 2px black;
     -webkit-text-stroke-width: 1px;
@@ -50,6 +77,9 @@ p {
     color: black;
 }
 
+.textCenter{
+    text-align: center;
+}
 
 #rtnTop { /*Sticky Button*/
     display: none; 
@@ -63,4 +93,4 @@ p {
     padding: 15px; 
     border-radius: 12px; 
     font-size: 18px; 
-    }
+}
