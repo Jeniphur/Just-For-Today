@@ -8,6 +8,7 @@
     padding-right: 5%;
     box-shadow: 2px 2px 2px 2px black;
     border-radius: 0px 0px 0px 10px;
+    z-index: 5;
 }
 
 .navbar h1 {
@@ -42,19 +43,24 @@ body {
 
 .whiteBox{
     background: rgba(255, 255, 255, 0.8); /* White background with 80% opacity */
-    border-radius: 10px;
-    padding: 15px;
+    border-radius: 10px !important;
+    padding: 15px !important;
     margin-left: 5%;
     margin-right: 5%
 }
 
-.cloudSmall{
-    padding-top:80px;
+.cloudBig{
+    padding-top: 60px;
     width: 25%;
     z-index: -1;
-    position: absolute; 
-    top:0px;
-    left: 0px;
+}
+
+.cloudSmall{
+    padding-top: 200px;
+    z-index: -1;
+    margin-right:0;
+    margin-left: auto;
+    display:block;
 }
 
 .fixed-bottom{
@@ -70,17 +76,18 @@ body {
 
 /*Welcome Section*/
 #welcome{
-    margin-top: 150px;
+    padding-top: 150px;
 }
 
 /*Coming Soon Section*/
 #comingSoon{
-    margin-top: 30px;
+    padding-top: 30px;
 }
 
 /*FAQ Section*/
 #faq{
-    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 50px;
 }
 
 .accordion{
