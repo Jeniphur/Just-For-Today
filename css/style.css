@@ -1,12 +1,87 @@
-/*Phone Screen*/
+/*Nav Bar*/
+.bg-light{
+    background-color: #9BC7EB !important;
+}
+
+.navbar{
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-shadow: 2px 2px 2px 2px black;
+    border-radius: 0px 0px 0px 10px;
+}
+
+.navbar-nav{
+    background-color: plum;
+}
+
+/*Background*/
 body {
-    background-image: url("../images/Samsung-Galaxy-S9-Gray.png");
+    height: auto;
+    background-color: #FFDEAC; /* For browsers that do not support gradients */
+    background-image: linear-gradient(#FFDEAC, #F4FEAC, #9DE9E4, #BCB1EF,#A35AFF);
+}
+
+.whiteBox{
+    background: rgba(255, 255, 255, 0.8); /* White background with 80% opacity */
+    border-radius: 10px;
+    padding: 15px;
+    margin-left: 5%;
+    margin-right: 5%
+}
+
+/*Welcome Section*/
+#welcome{
+    margin-top: 30px;
+}
+
+/*Coming Soon Section*/
+#comingSoon{
+    margin-top: 30px;
+}
+
+/*FAQ Section*/
+#faq{
+    margin-top: 30px;
+}
+
+.accordion{
+    border: none !important;
 }
 
 /*Typography*/
+@font-face { /*This links the aquatico font from our files*/
+    src: url("../fonts/Aquatico-Regular.otf");
+    font-family: aquatico;
+}
 
-/*Buttons*/
+h1 {
+    font-family: aquatico;
+    font-size: 36px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
 
+h2 {
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 24px;
+    color: black;
+}
+
+p {
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 16px;
+    color: black;
+}
+
+#textCenter{
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%
+}
 
 #rtnTop { /*Sticky Button*/
     display: none; 
@@ -20,4 +95,4 @@ body {
     padding: 15px; 
     border-radius: 12px; 
     font-size: 18px; 
-    }
+}

@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=divice-width, initial-scale=1.0">
-  <!--Bootstrap Link-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-  <!--CSS Link-->
+  <!--Bootstrap CSS Link-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <!--Google Font Link (Maven Pro)-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!--Internal CSS Link-->
   <link href="css/style.css" rel="stylesheet" type="text/css">
-  <!--Javascript Link-->
-
-  <!--FONT AWESOME Link-->
+  <!--FONT AWESOME-->
   <script src="https://kit.fontawesome.com/dcd5ed23df.js" crossorigin="anonymous"></script>
 </head>
 
@@ -17,72 +18,125 @@
 <header id="top">
   <!--Nav Here-->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img src="images/Logo.png" width="45" height="45" alt="Logo">
     <a class="navbar-brand" href="#top">
-      <img src="/images/Logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-      <h2>Just For Today</h2>
+      <h1>Just For Today</h1>
     </a>  
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link active" href="#welcome">About<span class="sr-only">(current)</span></a>
-        <a class="nav-link" href="#comingSoon">Coming Soon</a>
-        <a class="nav-link" href="#faq">FAQ</a>
+      <div class="navbar-nav navbar-right">
+        <a class="nav-link active" href="#welcome"><h2>About</h2><span class="sr-only">(current)</span></a>
+        <a class="nav-link active" href="#comingSoon"><h2>Coming Soon</h2</a>
+        <a class="nav-link active" href="#faq"><h2>FAQ</h2></a>
       </div>
     </div>
   </nav>
 </header>
 
+<!--Megan's Section -- Welcome -->
 <section id="welcome">
-  <!--Megan Here-->
+  <!--Page Heading -->
+  <h1>Just for Today</h1>
+  <br>
+  <h2 id="textCenter">If you find yourself struggling to take care of yourself "Just for Today" celebrates the little victories every step of the way!</h2>
+  <br>
+  <!--Card Group-->
+  <div class="card whiteBox">
+    <div class="card-body">
+      <h2>Our purpose is to help you take the steps you need to make your personal self-care a pary of your daily life. Many of us out there tend to put ourselves last and focus on others first. We focus on teaching you activities you can do to be healthy in all areas of your life, physical, mental, emotional, social, and spirtual.</h2>
+    </div>
+  </div>
+  <!--BuddyImg-->
+  <img src="./images/lil-dude-mushroom.svg" class="buddy" width="200">
 </section>    
-
 
 <!--Jodi's Section -- Coming Soon -->
 <section id="comingSoon">
-  <!--Sticky Return to Top Button-->
-  <!--This isn't working on my end - but once the Javascript is up and running it should work ezpz :)-->
-  <button onclick="topFunction()" id="rtnTop" title="Return to top">
-    <i class="fas fa-caret-up fa-5x"></i>
-  </button>
   <!--Page Heading -->
-  <h2>Coming Soon</h2>
+  <h1>Coming Soon</h1>
   <br>
   <!--Card Group-->
   <div class="card-group">
-    <div class="card">
+    <div class="card whiteBox">
       <i class="far fa-lightbulb fa-7x card-img-top"></i>
       <div class="card-body">
-        <h5 class="card-title">Daily Wellness Tips</h5>
+        <h2 class="card-title">Daily Wellness Tips</h2>
         <p class="card-text">In the future your lil' buddy will have tips to share! Tap the lightbulb over his head to see what he has to say. He will offer you one tip for each area of wellness. We respect your digital wellness goals, so we will only offer five tips a day, because reading about something just isn't the same as practicing it.</p>
       </div>
     </div>
-    <div class="card">
+    <div class="card whiteBox">
       <i class="fas fa-star fa-7x card-img-top"></i>
       <div class="card-body">
-        <h5 class="card-title">Sparkling Stars</h5>
+        <h2 class="card-title">Sparkling Stars</h2>
         <p class="card-text">We see you coming back each day! We see you doing your all to better yourself. Coming soon, you will receive a fun animation letting you know you've earned a star. No more having to review your stats page to see your reward. We will show you right away after checking your goal off your list.</p>
       </div>
     </div>
-    <div class="card">
+    <div class="card whiteBox">
       <i class="fas fa-coins fa-7x card-img-top"></i>
       <div class="card-body">
-        <h5 class="card-title">One-Time Donation</h5>
+        <h2 class="card-title">One-Time Donation</h2>
         <p class="card-text">We are here to help you on your path to wellness. That's why we offer our app completely free or with donation based subscriptions, but YOU our kind, amazing users have shared that you would like to make a one time donation. This option will be an added feature in the Market soon. You certainly don't have to give, but if you do, know we appreciate it greatly.</p>
       </div>
     </div>
   </div>
   <!--BuddyImg-->
-  <img src="./images/lil-dude-lemon.svg" class="buddy">
+  <img src="./images/lil-dude-lemon.svg" class="buddy" width="200">
 </section>
 
+<!--Jen's Section -- FAQ -->
 <section id="faq">
-  <!--Jenni Here-->
+  <!--Page Heading -->
+  <h1>Frequently Asked Questions</h1>
+  <br>
+  <!--FAQ Group-->
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item whiteBox">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <h2>Do I have to pay for the app?</h2>
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <p>Not at all! Just for Today recognizes that self-care is an important factor in everyone’s lives and paywalls or distracting advertisements do not help in your healing process. We are an application that relies solely on one-time or monthly donations. If you are interested in donating to us, please click here.</p>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="accordion-item whiteBox">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          <h2>What is Just for Today’s goal?</h2>
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <p>Our goal is to help you practice self-care by setting daily goals, forming healthy habits and celebrating your daily wins with your lil’ buddy. We understand that time is hard to come by, so we designed this app to be simple and easy-to-use.</p>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="accordion-item whiteBox">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          <h2>What happens if I don’t use the app every day?</h2>
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <p>There is no penalty for not using our app every day. Getting into the habit of using a new app is difficult even for us!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--BuddyImg-->
+  <img src="./images/lil-dude-avocado.svg" class="buddy" height="200">
 </section>
 
-
-<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<!--Bootstrap JS & Popper Link-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 <script src="index.js"></script>
 
 </body>
