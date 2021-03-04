@@ -77,8 +77,10 @@ p {
     color: black;
 }
 
-.textCenter{
+#textCenter{
     text-align: center;
+    margin-left: 5%;
+    margin-right: 5%
 }
 
 #rtnTop { /*Sticky Button*/
